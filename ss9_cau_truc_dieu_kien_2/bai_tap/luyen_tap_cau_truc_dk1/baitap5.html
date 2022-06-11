@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let scoreTest = parseInt(prompt("Enter your exam score : "));
+  let scoreMidterm = parseInt(prompt("Enter your midterm exam score : "));
+  let scoreFinal = parseInt(prompt("Enter your final exam score : "));
+  academy = (scoreTest + scoreMidterm + scoreFinal) / 3;
+  if (academy >= 8 ) {
+    document.write("Your academic ability is VERY GOOD!");
+  } else if (academy >= 6.5) {
+    document.write("Your academic ability is GOOD!");
+  } else {
+    document.write("You are BAD!");
+  }
+</script>
+</body>
+</html>
