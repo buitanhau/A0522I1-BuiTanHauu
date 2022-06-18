@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let temper =Number(prompt("Nhap nhiet do hien tai : "));
+  while (temper > 100 || temper < 20 ) {
+    if ( temper > 100) {
+      alert("Giam nhiet do")
+      temper =Number(prompt("Nhap nhiet do :"));
+    } else if (temper < 20) {
+      alert("Tang nhiet do");
+      temper =Number(prompt("Nhap nhiet do : "));
+    }
+  }
+  alert("Nhiet do phu hop!");
+</script>
+</body>
+</html>

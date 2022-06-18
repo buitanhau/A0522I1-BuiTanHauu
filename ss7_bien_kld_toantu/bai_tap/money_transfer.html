@@ -11,34 +11,48 @@
       <label>Amount</label>
     </td>
     <td>
-      <input name="moneyAmount" type="number" value="1">
+      <input name="moneyAmount" id="input" type="text" value="1">
     </td>
     <td>
       <label>From Currency</label>
     </td>
     <td>
-      <select name="Money">
+      <select id="select1" name="Money">
         <option value="VN">Việt Nam</option>
-        <option value="USA">Mỹ</option>
-        <option value="IND">Indonesia</option>
+        <option  value="USA">USA</option>
       </select>
     </td>
     <td>
       <label> To Currency</label>
     </td>
     <td>
-      <select name="Money">
-        <option value="VN">VND</option>
-        <option value="USA">USD</option>
-        <option value="IND">xx</option>
+      <select id="select2" name="Money">
+        <option  value="VN">VND</option>
+        <option  value="USA">USD</option>
       </select>
     </td>
     <td>
-      <input type="button" onclick="" value="Convert">
+      <input type="button" onclick="transferMoney()" value="Convert">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Result : <p id="result"></p>
     </td>
   </tr>
 </table>
-<script>
+  <script>
+    function transferMoney() {
+      let input = document.getElementById("input").value;
+      let select1 = document.getElementById("select1").value;
+      let select2 = document.getElementById("select2").value;
+      if (select1 == select2) {
+        document.getElementById("result").innerHTML = input
+      } if ( select1 == "VN" && select2 == "USA" ) {
+         transfer = input /24000;
+        document.getElementById("result").innerText = transfer
+      }
+    }
 </script>
 </body>
 </html>

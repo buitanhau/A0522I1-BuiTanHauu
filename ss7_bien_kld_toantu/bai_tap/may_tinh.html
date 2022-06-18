@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Caculator</title>
+</head>
+<body>
+<table>
+    <tr>
+    First num: <input type="number" id="num1" name="num1">
+    Second num: <input type="number" id="num2" name="num2">
+    </tr>
+    <tr>
+        <td>
+    <button type="button"  onclick="addNum()">Addition  (+)</button>
+        </td>
+        <td>
+    <button type="button" onclick="subNum()">Subtraction (-)</button>
+        </td>
+        <td>
+    <button type="button" onclick="multiNum()">Multiplication (x)</button>
+        </td>
+        <td>
+    <button type="button" onclick="divisNum()">Division (/)</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Result : <p id="result"></p>
+        </td>
+    </tr>
+</table>
+<script>
+    function addNum() {
+        let num1 = document.getElementById("num1").value;
+        let num2 = document.getElementById("num2").value;
+        num1 =Number(num1);
+        num2 =Number(num2);
+        let sum =num1 + num2;
+        document.getElementById("result").innerHTML = sum;
+    }
+   function subNum() {
+       let num1 = document.getElementById("num1").value;
+       let num2 = document.getElementById("num2").value;
+       num1 =Number(num1);
+       num2 =Number(num2);
+       let sub = num1 - num2;
+       document.getElementById("result").innerHTML = sub;
+   }
+   function multiNum() {
+       let num1 = document.getElementById("num1").value;
+       let num2 = document.getElementById("num2").value;
+       num1 =Number(num1);
+       num2 =Number(num2);
+       let multi = num1 * num2;
+       document.getElementById("result").innerHTML = multi;
+   }
+   function divisNum() {
+       let num1 = document.getElementById("num1").value;
+       let num2 = document.getElementById("num2").value;
+       num1 =Number(num1);
+       num2 =Number(num2);
+       let divide = num1 / num2;
+       document.getElementById("result").innerHTML = divide ;
+   }
+</script>
+</body>
+</html>
