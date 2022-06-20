@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    body {
+      background-color: antiquewhite;
+    }
+    button {
+      margin: 15px;
+      padding: 15px;
+    }
+    .caculator {
+      text-align: center;
+      width: 300px;
+      height: 350px;
+      border-radius: 15px;
+      background-color: orange;
+      padding: 10px 5px 5px 5px;
+      margin: 40px auto;
+      }
+    #result {
+      height: 20px;
+      text-align: center;
+      background-color: blanchedalmond ;
+    }
+  </style>
+</head>
+<body>
+<div class="caculator">
+<table>
+  <tr>
+    <td colspan="4">
+       <input type="text" id="result" name="number">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <button id="7" onclick="addNumbers(this.id)">7</button>
+    </td>
+    <td>
+      <button id="8" onclick="addNumbers(this.id)">8</button>
+    </td>
+    <td>
+      <button id="9" onclick="addNumbers(this.id)">9</button>
+    </td>
+    <td><button id="addition" onclick="math(this.id)">+</button> </td>
+  </tr>
+  <tr>
+    <td>
+      <button id="4" onclick="addNumbers(this.id)">4</button>
+    </td>
+    <td>
+      <button id="5" onclick="addNumbers(this.id)">5</button>
+    </td>
+    <td>
+      <button id="6" onclick="addNumbers(this.id)">6</button>
+    </td>
+    <td><button id="subtraction" onclick="math(this.id)">-</button> </td>
+  </tr>
+  <tr>
+    <td>
+      <button id="1" onclick="addNumbers(this.id)">1</button>
+    </td>
+    <td>
+      <button id="2"onclick="addNumbers(this.id)">2</button>
+    </td>
+    <td>
+      <button id="3" onclick="addNumbers(this.id)">3</button>
+    </td>
+    <td><button id="multi" onclick="math(this.id)">*</button> </td>
+  </tr>
+  <tr>
+    <td>
+      <button id="ac">C</button>
+    </td>
+    <td>
+      <button id="0" onclick="addNumbers(this.id)">0</button>
+    </td>
+    <td>
+      <button id="equal">=</button>
+    </td>
+    <td>
+      <button id="division" onclick="math(this.id)">/</button>
+    </td>
+  </tr>
+  <script>
+    function addNumbers(id) {
+      number = document.getElementById("number").value;
+      document.getElementById("number").value = number + id;
+    }
+    function math(id) {
+
+    }
+  </script>
+</table>
+</div>
+</body>
+</html>

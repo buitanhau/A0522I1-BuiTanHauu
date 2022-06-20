@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+<tr>
+  <td>
+    Số tiền đã vay : <input type="text" id="input">
+  </td>
+</tr>
+<tr>
+  <td>
+    Số tháng cho vay : <input type="text" id="time" >
+  </td>
+</tr>
+<tr>
+  <td>
+    Lãi suất cho vay : <input type="text" id="rate">
+  </td>
+</tr>
+<tr>
+  <td>
+    <input type="button"  onclick="math()" value="show ma rate">
+  </td>
+</tr>
+  <tr>
+    <td>
+      <p id="result"></p>
+    </td>
+  </tr>
+</table>
+<script>
+  function math() {
+    let input = document.getElementById("input").value;
+    let time = document.getElementById("time").value;
+    let rate = document.getElementById("rate").value;
+    let principal = parseInt(input) / parseInt(time);
+    let rateInMonth = (parseInt(input) * parseInt(rate) ) / parseInt(time);
+    let total = principal + rateInMonth;
+    document.getElementById("result").innerText = "Total : " + total + "vnd";
+
+  }
+</script>
+</body>
+</html>
