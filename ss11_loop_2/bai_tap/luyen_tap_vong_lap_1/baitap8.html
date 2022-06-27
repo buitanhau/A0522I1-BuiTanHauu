@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #button {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            border-radius: 100%;
+            background-color: pink;
+            top: 40%;
+            left: 40%;
+            font-weight: bold;
+        }
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+<input id="button" type="button" value="Play" onclick="showMessage(this.id)">
+<script>
+    let num1 =null ;
+    let num2 =null ;
+    let random = null;
+
+ function   showMessage() {
+     num1 = parseInt(prompt("from : "));
+     num2 = parseInt(prompt(" to : "));
+     random = Math.floor(Math.random() * (num2 - num1)) + num1;
+     input = parseInt(prompt("Enter your num : "));
+
+    if (input == random) {
+        alert("You win !!");
+    }
+ }
+
+
+
+</script>
+</body>
+</html>

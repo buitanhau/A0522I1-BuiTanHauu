@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let n1 = 0;
+ let  n2 = 1;
+ let result = null;
+ let number = parseInt(prompt("Enter the number of terms : "));
+ document.write("Fibonacci series : " + "<br>");
+ for (let i = 0; i <= number; i++ ) {
+   document.write(n1 +"<br>");
+   result = n1 + n2;
+   n1 = n2;
+   n2 = result;
+ }
+</script>
+</body>
+</html>
