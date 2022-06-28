@@ -10,5 +10,15 @@
     <td colspan="8"></td>
   </tr>
 </table>
+<script>
+    let i, j, sount;
+    sount="<table border='1' width='100%' cellspacing='0' cellpadding='6'>";
+    for (i=1; i<10; i++){
+        sount=sount+"<tr>";
+        for (j=2; j<10; j++)
+            sount=sount+"<td>" + j +"X"+ i +"=" +j*i+"</td>"
+    }
+    document.write(sount)
+</script>
 </body>
 </html>
