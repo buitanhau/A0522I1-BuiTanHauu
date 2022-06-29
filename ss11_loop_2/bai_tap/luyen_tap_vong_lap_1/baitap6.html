@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let sum = 0;
+  let series = "";
+  let count = 0;
+  for (let i = 1; ; i ++) {
+    if (i % 7 == 0) {
+      series += i + "";
+      console.log(series + "<br>" );
+      sum += i;
+      count++;
+      if (count == 30) {
+        break;
+      }
+     document.write("Series : " + series );
+     document.write("Tong 30 so chia het cho 7 : " + sum );
+    }
+  }
+</script>
+</body>
+</html>
