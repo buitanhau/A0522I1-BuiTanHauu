@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let input = parseInt(prompt("Enter number :"));
+  let array = [3,5,6,4,3,2,1];
+  for (let i = 0; i <= array.length; i++) {
+    if (input === array[i]) {
+      document.write("Value " + array[i] + "found at " + i + "<br>");
+    } else {
+      document.write("Value not found !");
+      break;
+    }
+  }
+</script>
+</body>
+</html>

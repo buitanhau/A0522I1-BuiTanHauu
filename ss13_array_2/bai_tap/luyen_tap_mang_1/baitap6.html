@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    for (let i = 0; i < 10; i++) {
+        arr[i] = Number(prompt("nhap vao cac phan tu cua mang :"));
+    }
+    let input = parseInt(prompt("Enter value : "));
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === input) {
+            document.write(input + " in the array");
+            break;
+        } else {
+            document.write(input + " is not in the array");
+        }
+    }
+</script>
+</body>
+</html>

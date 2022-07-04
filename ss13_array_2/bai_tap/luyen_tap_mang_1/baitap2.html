@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = [];
+    let array_10 = [];
+    for (let i = 0; i < 10; i++) {
+        array[i] = Number(prompt("nhap vao cac phan tu cua mang : "));
+    }
+    document.write("mang so : " + array);
+    let max = Math.max.apply(Math, array);
+    document.write("max : " + max);
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numbers = 0;
+    let count = 0;
+    let prime = "";
+    let n = 2;
+    for (let i = 0; ; i++) {
+        if (i <= 1) {
+            numbers = 0;
+        } else if (i == 2 || i == 3) {
+            count++;
+            prime += i + ""
+        } else if (i % 2 == 0) {
+            numbers = 0;
+        }
+
+    }
+</script>
+</body>
+</html>

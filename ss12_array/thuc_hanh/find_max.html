@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let numbers = [-3,3,5,6,2,1,10];
+  let index = 0;
+  let max = numbers[0];
+  for (let i = 1; i < numbers.length; i++) {
+    if (numbers[i] > max) {
+      max = numbers[i];
+      index = i;
+    }
+    document.write("MAX VALUE : " + max + "found at " + index);
+    break;
+  }
+</script>
+</body>
+</html>

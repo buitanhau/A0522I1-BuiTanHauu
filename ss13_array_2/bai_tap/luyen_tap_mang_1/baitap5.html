@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr_length = prompt("nhap do dai cua mang : ");
+    let arr = [];
+    let negative = [];
+    for (let i = 0; i < arr_length; i++) {
+        arr[i] = Number(prompt("nhap vao cac phan tu cua mang : "));
+    }
+    for (let i = 0; i < arr_length; i++) {
+        if (arr[i] < 0) {
+            negative.push(arr[i]);
+        }
+    }
+    document.write("trong mang co " + negative.length + " so am");
+</script>
+</body>
+</html>
