@@ -6,17 +6,19 @@
 </head>
 <body>
 <script>
+  let arr3 = [1,2,3,4,5];
 let arr_length1 = prompt("nhap vao do dai cua mang 1 :");
 let arr1 = [];
 for (let i = 0; i < arr_length1; i++) {
   arr1[i] = Number(prompt("Nhap vao cac phan tu cua mang : "));
 }
-document.write("mang 1 : " + arr1);
 let arr_length2 = prompt("Nhap vao do dai cua mang 2 : ");
 let arr2 = [];
 for (let j = 0; j < arr_length2; j++) {
   arr2[j] =Number(prompt("nhap vao cac phan tu cua mang 2 :"));
 }
+let newArr = arr1.concat(arr2,arr3);
+document.write("new arr : " + newArr);
 </script>
 </body>
 </html>
