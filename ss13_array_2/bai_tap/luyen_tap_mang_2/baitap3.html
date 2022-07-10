@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let array_length = prompt("nhap do dai cua mang : ");
+  let array = [];
+  let array_Number = [];
+  for (let i = 0; i < array_length; i ++) {
+    array[i] = prompt("nhap vao cac phan tu cua mang : ");
+  }
+  document.write("mang so : " + array + "<br/>");
+  for (let i = 0; i < array_length; i ++) {
+    if ( array[i] % 2 === 0 || array[i] % 2 !== 1)
+    array_Number.push(array[i]);
+  }
+  document.write("so ky tu so trong mang : " + array_Number);
+</script>
+</body>
+</html>

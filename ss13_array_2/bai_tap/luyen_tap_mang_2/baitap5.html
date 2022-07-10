@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let array_Length1 = prompt("nhap dodai cua mang 1 :");
+  let array_1 = [];
+  for (let i = 0; i < array_Length1; i++) {
+    array_1[i] = prompt("nhap vao cac phan tu cua mang : ");
+  }
+  let array_Length2 = prompt("nnap dodai cua mang 2 :");
+  let array_2 = [];
+  for (let i = 0; i < array_Length2; i++) {
+    array_2[i] = prompt("nhap vao cac phan tu cua mang : ");
+  }
+  let sameArray = JSON.stringify(array_1) === JSON.stringify(array_2);
+  document.write("same array :" + sameArray);
+</script>
+</body>
+</html>

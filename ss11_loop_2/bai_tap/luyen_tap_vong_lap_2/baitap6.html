@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr_Length = prompt("do dai cua mang : ");
+    let arr = [];
+    for (let i = 0; i < arr_Length; i++) {
+        arr[i] = (prompt("nhap vao cac phan  tu cua mang : "));
+    }
+    document.write("mang ban dau : " + arr + "<br/>");
+    for (let i = 0; i < arr_Length; i++) {
+        if (arr[i] == "-") {
+            newArr = arr.replace("-", "_");
+        }
+    }
+    document.write("mang moi : " + newArr)
+</script>
+</body>
+</html>
