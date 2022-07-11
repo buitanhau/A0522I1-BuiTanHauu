@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array_Length = parseInt(prompt("do dai cua mang : "));
+    let array = [];
+    let new_Arr = [];
+    for (let i = 0; i < array_Length; i++) {
+        array[i] = Number(prompt("Enter element of array : "));
+
+    }
+    document.write("array : " + array);
+
+    function reserve_Array() {
+        new_Arr = array.reverse();
+        document.write("new arr : " + new_Arr);
+    }
+
+    reserve_Array()
+</script>
+</body>
+</html>
