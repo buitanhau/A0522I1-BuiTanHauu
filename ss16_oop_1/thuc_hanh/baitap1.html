@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  class Date {
+    constructor(day,month,year) {
+      this.day = day;
+      this.month = month;
+      this.year = year;
+    }
+    getDay() {
+      return this.day;
+    }
+    setDay(newDay) {
+      this.day = newDay;
+    }
+    getMonth() {
+      return this.month;
+    }
+    setMonth(newMonth) {
+      this.month = newMonth;
+    }
+    getYear() {
+      return this.year;
+    }
+    setYear(newYear) {
+      this.year = newYear;
+    }
+    ShowDate() {
+      document.write(this.day + "/" + this.month + "/" + this.year)
+      return date;
+    }
+  }
+  let date = new Date(2,2,2222);
+  document.write(date.ShowDate());
+</script>
+</body>
+</html>

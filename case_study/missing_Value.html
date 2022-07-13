@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr_Length1 = prompt("do dai mang 1 : ");
+    let arr1 = [];
+    for (let i = 0; i < arr_Length1; i++) {
+        arr1[i] = Number(prompt("cac phan tu cua mang 1 : "));
+    }
+    let arr_Length2 = prompt("do dai mang 2 : ");
+    let arr2 = [];
+    for (let i = 0; i < arr_Length2; i++) {
+        arr2[i] = Number(prompt("cac phan tu cua mang 2 : "));
+    }
+    document.write("mang 1 : " + arr1 + "<br/>");
+    document.write("mang 2 : " + arr2);
+
+    function missing_Values() {
+        let count = 0;
+        for (let i = 0 ; i < arr_Length1; i++) {
+            if (arr1[i] == arr2[i]) {
+                count ++;
+                break;
+            }
+        }
+    }
+    missing_Values()
+
+
+</script>
+</body>
+</html>

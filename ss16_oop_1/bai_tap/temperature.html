@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  class Temperature {
+    constructor(tem_C,tem_F,tem_Kevin) {
+      this.tem_C = tem_C;
+      this.tem_F = tem_F;
+      this.tem_Kevin = tem_Kevin;
+    }
+    getTemC() {
+      return this.tem_C;
+    }
+    setTemC(newTem_C) {
+      this.tem_C = newTem_C;
+    }
+    getTemF() {
+      return this.tem_F;
+    }
+    setTemF(newTem_F) {
+      this.tem_F = newTem_F;
+    }
+    getTemKevin() {
+      return this.tem_Kevin;
+    }
+    setTemKevin(newTem_Kevin) {
+      this.tem_Kevin = newTem_Kevin;
+    }
+    CTOF() {
+      let temF = this.tem_C * 1.8 + 32;
+      return temF;
+    }
+    CTOKEVIN() {
+      let temK = this.tem_C + 273.15;
+      return temK;
+    }
+  }
+  let temperature = new Temperature(10);
+  document.write("c to f : " + temperature.CTOF());
+</script>
+</body>
+</html>

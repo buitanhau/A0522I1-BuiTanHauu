@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Mobile {
+        constructor(memory_1,memory_2,memory_3,memory_4, battery) {
+            this.memory_1 = memory_1;
+            this.memory_2 = memory_2;
+            this.memory_3 = memory_3;
+            this.battery = battery;
+        }
+
+        CheckBattery() {
+            if (this.battery > 1) {
+                alert("ON");
+            } else {
+                alert("Off");
+            }
+        }
+
+        TurnOn() {
+            alert("dien thoai dang bat");
+        }
+
+        TurnOff() {
+            alert("Dien thoai dang tat");
+        }
+
+        Charging() {
+            alert("dang sac " + this.battery++);
+        }
+
+        AfterUse() {
+            this.battery--;
+        }
+
+    }
+    let mobile = new Mobile(100,100,100,100);
+</script>
+</body>
+</html>
