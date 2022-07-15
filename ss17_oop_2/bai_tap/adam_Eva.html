@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  class Apple {
+    constructor(weight,apple_Weight) {
+      this.weight = weight;
+      this.apple_Weight = apple_Weight;
+    }
+    getWeight() {
+      return this.weight;
+    }
+    setWeight(newWeight) {
+      this.weight = newWeight;
+    }
+    Apple() {
+      this.apple_Weight = 10;
+    }
+    Decrease() {
+
+    }
+    isEmpty() {
+     if (this.apple_Weight === 0) {
+       alert("Apple is empty !");
+     }
+    }
+  }
+  class Human {
+    constructor(name,gender,weight,message) {
+      this.name = name;
+      this.gender = gender;
+      this.weight = weight;
+      this.message = message;
+    }
+    getName() {
+      return this.name;
+    }
+    setName(newName) {
+      this.name = newName;
+    }
+    getGender() {
+      return this.gender;
+    }
+    setGender(newGender) {
+      this.gender = newGender;
+    }
+    getWeight() {
+      return this.weight;
+    }
+    setWeight(newWeight) {
+      this.weight = newWeight;
+    }
+    getMessage() {
+      return this.message;
+    }
+    setMessage(newMessage) {
+      this.message = newMessage;
+    }
+    isMale() {
+      if ( this.gender === "male") {
+        alert("gender : " + this.gender);
+      } else {
+        alert("gender : " + "female");
+      }
+    }
+    Talk() {
+      alert("message : " + this.message);
+    }
+    Eat(Apple) {
+      if (Apple.apple_Weight > 0) {
+        this.weight++;
+        Apple.apple_Weight--;
+      }
+    }
+    CheckAppleWeight(Apple) {
+      alert("Apple weight is : " + Apple.apple_Weight);
+    }
+    CheckInfoHuman() {
+      document.write("Name : " + this.name + "<br/>" + "gender : " + this.gender + "<br/>" + "weight : " + this.weight);
+    }
+  }
+  let apple = new Apple(10);
+  let human = new Human("Hau","male",100,"asssasa");
+  human.Eat();
+</script>
+</body>
+</html>

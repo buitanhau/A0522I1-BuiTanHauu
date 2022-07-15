@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class ElectricLamp {
+        constructor(status) {
+            this.status = status;
+        }
+
+        getActive() {
+            if (this.status == true) {
+                alert("lamp is on");
+                return this.status;
+            } else {
+                alert("lamp is off");
+                return this.status;
+            }
+        }
+
+        setActive(newStatus) {
+            this.status = newStatus;
+        }
+
+        turnOn() {
+            if (this.status == true) {
+                return this.status;
+            }
+        }
+
+        turnOff() {
+            this.status == false;
+            return this.status;
+        }
+    }
+
+    class SwitchButton {
+        constructor(statusLamp) {
+            this.statusLamp = statusLamp;
+        }
+
+        getActiveLamp() {
+            return this.statusLamp.getActive();
+        }
+
+        setActiveLamp(newStatusLamp) {
+            this.statusLamp = newStatusLamp;
+        }
+
+        connectToLamp(electric) {
+            this.electric = electric;
+            if (this.statusLamp == true && this.electric == true) {
+                alert("lamp is on");
+            } else if (this.statusLamp == true && this.electric == false) {
+                alert("switch is off");
+            } else if (this.statusLamp == false && this.electric == true) {
+                alert("not have electric");
+            } else {
+                alert("switch is off & not have electric");
+            }
+        }
+
+        switchOn() {
+            return this.statusLamp == true;
+        }
+
+        switchOff() {
+            return this.statusLamp == false;
+        }
+    }
+
+    let oop1 = new SwitchButton(true);
+    oop1.connectToLamp(true);
+</script>
+</body>
+</html>
